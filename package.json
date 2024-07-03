@@ -1,0 +1,36 @@
+{
+  "name": "@acfatah/malaysia-postcodes-data",
+  "type": "module",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Script to generate flattened JSON objects list of Malaysia postcodes data, sorted by the postcode number.",
+  "author": "Achmad F. Ibrahim <acfatah@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/acfatah/malaysia-postcodes-data#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acfatah/malaysia-postcodes-data.git"
+  },
+  "bugs": {
+    "url": "https://github.com/acfatah/malaysia-postcodes-data/issues"
+  },
+  "main": "main.js",
+  "bin": "bin/main.mjs",
+  "scripts": {
+    "build": "vite-node src/main.js && npm run lint:fix",
+    "lint:fix": "eslint --fix .",
+    "precommit": "npm run lint:fix",
+    "update": "npm-check-updates --upgrade --silent --target semver && npm install --no-progress"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.21.2",
+    "@rushstack/eslint-patch": "^1.10.3",
+    "eslint": "^8.57.0",
+    "eslint-plugin-format": "^0.1.2",
+    "npm-check-updates": "^16.14.20",
+    "prettier": "^3.3.2",
+    "simple-git-hooks": "^2.11.1",
+    "vite": "^5.3.3",
+    "vite-node": "^1.6.0"
+  }
+}
