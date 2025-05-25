@@ -14,23 +14,25 @@
   "bugs": {
     "url": "https://github.com/acfatah/malaysia-postcodes-data/issues"
   },
-  "main": "main.js",
-  "bin": "bin/main.mjs",
   "scripts": {
-    "build": "vite-node src/main.js && npm run lint:fix",
-    "lint:fix": "eslint --fix .",
-    "precommit": "npm run lint:fix",
-    "update": "npm-check-updates --upgrade --silent --target semver && npm install --no-progress"
+    "build": " bun scripts/build.ts",
+    "type-check": "tsc --noEmit -p tsconfig.json",
+    "lint": "eslint .",
+    "lint:staged": "eslint --pass-on-no-patterns --no-warn-ignored $(git diff --cached --name-only --diff-filter=d)",
+    "lint:fix": "eslint . --fix",
+    "lint:inspect": "eslint --inspect-config",
+    "precommit": "bun lint:staged"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.21.2",
-    "@rushstack/eslint-patch": "^1.10.3",
-    "eslint": "^8.57.0",
-    "eslint-plugin-format": "^0.1.2",
-    "npm-check-updates": "^16.14.20",
-    "prettier": "^3.3.2",
-    "simple-git-hooks": "^2.11.1",
-    "vite": "^5.3.3",
-    "vite-node": "^1.6.0"
+    "@antfu/eslint-config": "^4.13.2",
+    "@types/bun": "latest",
+    "eslint": "^9.27.0",
+    "simple-git-hooks": "^2.13.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "bun precommit"
   }
 }
