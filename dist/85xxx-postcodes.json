@@ -1,0 +1,14 @@
+[
+  { "postcode": "85000", "city": "Segamat", "state": "Johor" },
+  { "postcode": "85010", "city": "Segamat", "state": "Johor" },
+  { "postcode": "85020", "city": "Segamat", "state": "Johor" },
+  { "postcode": "85030", "city": "Segamat", "state": "Johor" },
+  { "postcode": "85060", "city": "Segamat", "state": "Johor" },
+  { "postcode": "85070", "city": "Segamat", "state": "Johor" },
+  { "postcode": "85080", "city": "Segamat", "state": "Johor" },
+  { "postcode": "85100", "city": "Batu Anam", "state": "Johor" },
+  { "postcode": "85200", "city": "Jementah", "state": "Johor" },
+  { "postcode": "85210", "city": "Jementah", "state": "Johor" },
+  { "postcode": "85300", "city": "Labis", "state": "Johor" },
+  { "postcode": "85400", "city": "Chaah", "state": "Johor" }
+]
