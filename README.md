@@ -44,6 +44,29 @@ const postcodes = await response.json()
 // Now you can use 'postcodes' to suggest city and state names.
 ```
 
+### CDN Link Examples
+
+<details>
+  <summary>jsdelivr.com</summary>
+  <pre>
+https://cdn.jsdelivr.net/npm/@acfatah/malaysia-postcodes-data@2.0.0/dist/01xxx-postcodes.json
+  </pre>
+</details>
+
+<details>
+  <summary>unpkg.com</summary>
+  <pre>
+https://unpkg.com/@acfatah/malaysia-postcodes-data@2.0.0/dist/01xxx-postcodes.json
+  </pre>
+</details>
+
+<details>
+  <summary>skypack.dev</summary>
+  <pre>
+https://cdn.skypack.dev/@acfatah/malaysia-postcodes-data@v2/dist/01xxx-postcodes.json
+  </pre>
+</details>
+
 ### Advantages:
 - Performance: This method is fast as it avoids loading the entire postcode
   dataset into memory.
