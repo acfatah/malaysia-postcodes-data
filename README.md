@@ -35,7 +35,7 @@ Here's a simple example of how to use the repository to fetch city and state sug
 
 ```javascript
 // Assuming 'postcodeInput' is a string containing the postcode entered by the user.
-const [_, prefix] = postcodeInput.match(/(\d{2})\d{3}/)
+const [_, prefix] = postcodeInput.match(/(\d{2})\d{3}/) || [null, '']
 
 // Fetch the relevant postcode data using the first two digits as a prefix.
 const response = await fetch(`https://raw.githubusercontent.com/acfatah/malaysia-postcodes-data/refs/heads/main/dist/${prefix}xxx-postcodes.json`)
