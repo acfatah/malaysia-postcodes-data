@@ -24,7 +24,8 @@
     "lint:staged": "eslint --pass-on-no-patterns --no-warn-ignored $(git diff --cached --name-only --diff-filter=d)",
     "lint:inspect": "eslint --inspect-config",
     "format": "eslint . --fix",
-    "precommit": "bun lint:staged"
+    "precommit": "bun lint:staged",
+    "release": "bunx --bun bumpp --excute=\"bun install\""
   },
   "peerDependencies": {
     "typescript": "^5.9.3"
@@ -32,6 +33,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^6.2.0",
     "@types/bun": "^1.3.2",
+    "bumpp": "^10.3.1",
     "eslint": "^9.39.1",
     "simple-git-hooks": "^2.13.1"
   },
