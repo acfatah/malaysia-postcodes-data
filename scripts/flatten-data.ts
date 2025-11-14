@@ -1,6 +1,8 @@
 import { appendFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 
+import type { PostcodeRecord } from '../types'
+
 async function flatten() {
   const data = await import('../data/postcodes.json')
 
@@ -34,7 +36,7 @@ async function flatten() {
   return output
 }
 
-async function writeToFile(data) {
+async function writeToFile(data: PostcodeRecord[]) {
   const filePath = path.join(__dirname, '..', '/dist/all-postcodes.json')
   const count = data.length
 
