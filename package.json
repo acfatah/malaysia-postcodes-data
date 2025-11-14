@@ -22,8 +22,8 @@
     "type-check": "tsc --noEmit -p tsconfig.json",
     "lint": "eslint .",
     "lint:staged": "eslint --pass-on-no-patterns --no-warn-ignored $(git diff --cached --name-only --diff-filter=d)",
-    "lint:fix": "eslint . --fix",
     "lint:inspect": "eslint --inspect-config",
+    "format": "eslint . --fix",
     "precommit": "bun lint:staged"
   },
   "peerDependencies": {
