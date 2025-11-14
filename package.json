@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "build": " bun scripts/build.ts",
-    "type-check": "tsc --noEmit -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
     "lint": "eslint .",
     "lint:staged": "eslint --pass-on-no-patterns --no-warn-ignored $(git diff --cached --name-only --diff-filter=d)",
     "lint:inspect": "eslint --inspect-config",
