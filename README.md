@@ -2,10 +2,17 @@
 
 <p>
   <a href="./LICENSE">
-  <img alt="GitHub" src="https://img.shields.io/github/license/acfatah/malaysia-postcodes-data?style=flat-square"></a>
-
+    <img
+      alt="GitHub"
+      src="https://img.shields.io/github/license/acfatah/malaysia-postcodes-data?style=flat-square"></a>
+  <a href="https://www.npmjs.com/package/@acfatah/malaysia-postcodes-data">
+    <img
+      alt="NPM Version"
+      src="https://img.shields.io/npm/v/%40acfatah%2Fmalaysia-postcodes-data"></a>
   <a href="https://github.com/acfatah/malaysia-postcodes-data/commits/main">
-  <img alt="GitHub last commit (by committer)" src="https://img.shields.io/github/last-commit/acfatah/malaysia-postcodes-data?display_timestamp=committer&style=flat-square"></a>
+    <img
+      alt="GitHub last commit (by committer)"
+      src="https://img.shields.io/github/last-commit/acfatah/malaysia-postcodes-data?display_timestamp=committer&style=flat-square"></a>
 </p>
 
 Flattened JSON objects list of Malaysia postcodes data, sorted by the postcode number.
