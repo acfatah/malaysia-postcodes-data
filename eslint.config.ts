@@ -1,23 +1,21 @@
-import antfu from '@antfu/eslint-config'
+import { config, preset } from '@acfatah/eslint-preset'
 
-export default antfu(
-  {},
+export default config(
+  {
+    formatters: true,
+    type: 'lib',
+    ignores: [
+      '**/node_modules/**',
+      '**/dist/**',
+      '**/data/**',
+      'logs',
+    ],
+  },
 
   {
     rules: {
-      'sort-imports': 'off',
-      'perfectionist/sort-imports': [
-        'error',
-        {
-          partitionByNewLine: true,
-          newlinesBetween: 'ignore',
-        },
-      ],
+      ...preset,
     },
   },
 
-  {
-    name: 'app/files-to-ignore',
-    ignores: ['**/data/**', '**/dist/**', 'logs'],
-  },
 )
