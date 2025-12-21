@@ -50,6 +50,7 @@ digits from the postcode, we can quickly narrow down the possible locations
 and suggest accurate inputs using CDN.
 
 ### How It Works:
+
 Here's a simple example of how to use the repository to fetch city and state suggestions:
 
 ```javascript
@@ -100,6 +101,7 @@ https://cdn.skypack.dev/@acfatah/malaysia-postcodes-data@v2/dist/{prefix}xxx-pos
 </details>
 
 ### Advantages:
+
 - Performance: This method is fast as it avoids loading the entire postcode
   dataset into memory.
 
