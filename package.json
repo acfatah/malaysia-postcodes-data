@@ -25,8 +25,7 @@
     "lint:inspect": "eslint --inspect-config",
     "format": "bunx --bun eslint . --fix",
     "precommit": "bun lint:staged",
-    "release": "bunx --bun bumpp --execute=\"bun install\"",
-    "publish": "npm publish --access public"
+    "release": "bunx --bun bumpp --execute=\"bun install\""
   },
   "peerDependencies": {
     "typescript": "^5.9.3"
