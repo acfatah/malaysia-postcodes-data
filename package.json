@@ -1,7 +1,7 @@
 {
   "name": "@acfatah/malaysia-postcodes-data",
   "type": "module",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "private": false,
   "description": "Script to generate flattened JSON objects list of Malaysia postcodes data, sorted by the postcode number.",
   "author": "Achmad F. Ibrahim <acfatah@gmail.com>",
